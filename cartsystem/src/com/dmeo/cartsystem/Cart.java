@@ -9,7 +9,7 @@ public class Cart {
     public void addProduct(Product item)
     {
         products.add(item);
-        System.out.println(item.getName() +"added to cart");
+        //System.out.println(item.getName() +"added to cart");
     }
 
     public double totalprice(){
@@ -30,11 +30,10 @@ public class Cart {
                 toremove=p;
                 break;
             }
-
         }
         if(toremove!=null){
             products.remove(toremove);
-            System.out.println(Productname+"product removed from cart");
+            //System.out.println(Productname+"product removed from cart");
         }
         else{
             System.out.println("product not found");
@@ -43,4 +42,12 @@ public class Cart {
 
     }
 
+    public void displaycart(){
+        System.out.println("------CART SUMMARY--------");
+        for(Product k:products)
+        {System.out.println(k.getName()+"-"+k.getPrice());}
+        System.out.println();
+        System.out.println("Total items:"+" "+ products.size());
+        System.out.println("Total price:"+" "+ toString().format("%.2f",totalprice()));
+    }
 }

@@ -14,6 +14,8 @@ public class Main {
          c.removeproduct("Bag");
          c.removeproduct("top");
 
+         c.displaycart();
+
          //System.out.println("Totalprice"+ " "+ String.format("%2f",c.totalprice()));
        // System.out.println("Totalprice"+ " "+Math.round(c.totalprice()));
     }
