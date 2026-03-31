@@ -10,7 +10,11 @@ public class Main {
          c.addProduct(p1);
          c.addProduct(p2);
          c.addProduct(p3);
+
+         c.removeproduct("Bag");
+         c.removeproduct("top");
+
          //System.out.println("Totalprice"+ " "+ String.format("%2f",c.totalprice()));
-        System.out.println("Totalprice"+ " "+Math.round(c.totalprice()));
+       // System.out.println("Totalprice"+ " "+Math.round(c.totalprice()));
     }
 }

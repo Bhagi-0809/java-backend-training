@@ -13,6 +13,10 @@ public class Product {
     }
 
     public Product(String name, Double price) {
+        if (price<0){
+            System.out.println("Invalid price");
+            return;
+        }
         this.name = name;
         this.price = price;
     }
