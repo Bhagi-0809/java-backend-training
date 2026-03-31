@@ -18,5 +18,7 @@ public class Main {
 
          //System.out.println("Totalprice"+ " "+ String.format("%2f",c.totalprice()));
        // System.out.println("Totalprice"+ " "+Math.round(c.totalprice()));
+        System.out.println("Totalprice"+ " "+ String.format("%2f",c.totalprice()));//for 2 decimal purpose
+        System.out.println("Totalprice"+ " "+Math.round(c.totalprice()));//for round off value purpose
     }
 }

@@ -48,6 +48,6 @@ public class Cart {
         {System.out.println(k.getName()+"-"+k.getPrice());}
         System.out.println();
         System.out.println("Total items:"+" "+ products.size());
-        System.out.println("Total price:"+" "+ toString().format("%.2f",totalprice()));
+        System.out.println("Total price:"+" "+ Math.round(totalprice()));
     }
 }
