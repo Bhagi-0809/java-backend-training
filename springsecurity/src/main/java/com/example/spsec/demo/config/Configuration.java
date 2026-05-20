@@ -25,13 +25,12 @@ public class Configuration {
 
 
                 .authorizeHttpRequests(auth->auth
-                        .requestMatchers("/hello").permitAll()
+                        .requestMatchers("/hello","/signup").permitAll()
                         .anyRequest().authenticated())  //allow hello endpoint without authencation and any other req should be protected
 
-
                 .httpBasic(Customizer.withDefaults())
-                .formLogin(Customizer.withDefaults());
-        // .csrf(csrf-> csrf.disable());//helps to modify data without requiring the csrf token
+                .formLogin(Customizer.withDefaults())
+                .csrf(csrf-> csrf.disable());//helps to modify data without requiring the csrf token
 
         return http.build();
     }
